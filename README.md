@@ -24,7 +24,7 @@
 | ------- | ----------- |
 | A &ndash; Learning Languages | [Solution](day2/CF-277A.cpp) |
 | B &ndash; Marbles | [Solution](day2/GYM-101908B.cpp) |
-| C &ndash; Win or Freeze | [Solution 1 (dynamic programming)](day2/CF-150A.cpp), [Solution 2 (constant time)](day2/CF-150A-constant.cpp) |
+| C &ndash; Win or Freeze | [Solution 1 (dynamic programming)](day2/CF-150A.cpp), [Solution 2 (faster)](day2/CF-150A-faster.cpp) |
 | D &ndash; Points | [Solution](day2/seletiva-pontos.cpp) |
 | E &ndash; Mahmoud and a Dictionary | [Solution](day2/CF-766D.cpp) |
 | F &ndash; Strange Food Chain | [Solution](day2/SPOJ-CHAIN.cpp) |
