@@ -10,7 +10,7 @@
 | ------- | ----------- |
 | [A &ndash; Keep Them Separated](https://open.kattis.com/problems/keepthemseparated) | [Solution 1 (safe hash)](day1/keepthemseparated.cpp), [Solution 2 (hackable)](day1/keepthemseparated_unsafer.cpp) |
 | [B &ndash; The Values You Can Make](https://codeforces.com/contest/687/problem/C) | [Solution](day1/CF-687C.cpp) |
-| [C &ndash; Roads](ihttp://www.codah.club/tasks.php?lang=uk&show_task=5000001394) | [Solution](day1/APIO-roads.cpp) |
+| [C &ndash; Roads](http://www.codah.club/tasks.php?lang=uk&show_task=5000001394) | [Solution](day1/APIO-roads.cpp) |
 | [D &ndash; Journey](https://codeforces.com/contest/839/problem/C) | [Solution](day1/CF-839C.cpp) |
 | [E &ndash; Alyona and mex](https://codeforces.com/contest/739/problem/A) | [Solution](day1/CF-739A.cpp) |
 | [F &ndash; Dima and Bacteria](https://codeforces.com/contest/400/problem/D) | [Solution](day1/CF-400D.cpp) |
