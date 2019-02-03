@@ -15,6 +15,7 @@ private:
     std::vector<int> m_time;   // [0 .. size]
     std::vector<int> m_size;   // [0 .. size]
 public:
+    // Complexity: O(n)
     UnionFindPartial(const int size)
         : m_current_time(0)
         , m_parent(size+1)
@@ -24,39 +25,42 @@ public:
         for (int i = 0; i <= size; ++i)
             m_parent[i] = i;
     }
+    // Complexity: O(1)
     inline int time() const {
         return m_current_time;
     }
+    // Complexity: O(log n)
     inline int find(int x, const int last_time) const {
         while (m_time[x] <= last_time && x != m_parent[x])
             x = m_parent[x];
         return x;
     }
+    // Complexity: O(log n)
     inline int find(const int x) const {
         return find(x, time());
     }
+    // Complexity: O(log n)
     void merge(int a, int b) {
         a = find(a);
         b = find(b);
-        m_current_time += 1;
+        if (m_size[a] > m_size[b])
+            swap(a, b);
         if (a != b) {
-            if (m_size[a] < m_size[b]) {
-                m_parent[a] = b;
-                m_time[a] = m_current_time;
-                m_size[b] += m_size[a];
-            } else {
-                m_parent[b] = a;
-                m_time[b] = m_current_time;
-                m_size[a] += m_size[b];
-            }
+            m_current_time += 1;
+            m_parent[a] = b;
+            m_time[a] = m_current_time;
+            m_size[b] += m_size[a];
         }
     }
+    // Complexity: O(log n)
     bool same(const int a, const int b) const {
         return find(a) == find(b);
     }
+    // Complexity: O(log n)
     bool same(const int a, const int b, const int last_time) const {
         return find(a, last_time) == find(b, last_time);
     }
+    // Complexity: O(log^2 n)
     inline int find_time(int a, int b) const {
         int ans = -1;
         int l = 0, r = time();
@@ -71,9 +75,9 @@ public:
         }
         return ans;
     }
-    int size(const int a) {
-        const int gpa = find(a);
-        return m_size[gpa];
+    // Complexity: O(log n)
+    int size(const int a) const {
+        return m_size[find(a)];
     }
 };
 /////////////////////////////////////////////////////// END OF UNION-FIND WITH PARTIAL PERSISTENCY ///////////////////////////////////////////////////////
