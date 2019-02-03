@@ -66,7 +66,7 @@ int n, k;
 
 SparseUnionFind solve(const int v) {
     SparseUnionFind master;
-    if (street[v].first != 0){
+    if (street[v].first != 0)
         master.merge(street[v].first, street[v].second);
     for (const int w : children[v])
         master.merge_with(solve(w));
