@@ -12,12 +12,14 @@ private:
     std::map<int, int> m_parent;
     std::map<int, int> m_size;
 public:
+    // Complexity: O(log(n) alpha(n))
     int find(const int x) {
         auto it = m_parent.find(x);
         if (it == m_parent.end())
             return x;
         return it->second = find(it->second);
     }
+    // Complexity: O(log(n) alpha(n))
     void merge(int a, int b) {
         a = find(a);
         b = find(b);
@@ -29,9 +31,11 @@ public:
             m_size[b] += m_size[a];
         }
     }
+    // Complexity: O(log(n) alpha(n))
     bool same(const int a, const int b) {
         return find(a) == find(b);
     }
+    // Complexity: O(log(n) alpha(n))
     int size(const int a) {
         auto it = m_size.find(a);
         if (it == m_size.end())
@@ -39,13 +43,16 @@ public:
         else
             return it->second;
     }
-    const std::vector<std::pair<int, int>> edges() const {
+    // Complexity: O(1)
+    const std::vector<std::pair<int, int>>& edges() const {
         return m_edges;
     }
+    // Complexity: O(1)
     const int edges_count() const {
         return (int) m_edges.size();
     }
     // Note: this method may invalidate the rhs
+    // Complexity: O(k log(n) alpha(n)) where k = min(lhs_size, rhs_size) and n = (lhs_size + rhs_size)
     void merge_with(SparseUnionFind&& rhs) {
         if (m_edges.size() < rhs.m_edges.size()) {
             std::swap(m_parent, rhs.m_parent);
