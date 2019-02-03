@@ -7,10 +7,10 @@ This repository is intended to centralize all resources (slides, problems, solut
 For the other days, please refer to [Summer School &ndash; Day-by-day](http://maratona.ic.unicamp.br/MaratonaVerao2019/daybyday.html).
 
 Day 6 started with an ICPC-style contest in the morning, which was followed by a lecture in the afternoon.
-The first half of the lecture was reserved for discussion of the contest, while the second half centered around disjoin-set union (including rollback, partial persistence and also the more general "small-to-large" technique).
+The first half of the lecture was reserved for discussion of the contest, while the second half centered around disjoint-set union (including rollback, partial persistence and also the more general "small-to-large" technique).
 
 Day 7 started with a thematic contest in the morning, with problems involving disjoint-set union as well as game theory.
-The first half of the lecture was reserved for discussion of the contest problems involving disjoin-set union, some of which required interesting tricks.
+The first half of the lecture was reserved for discussion of the contest problems involving disjoint-set union, some of which required interesting tricks.
 The second half focused on game theory (including acyclic games, Nim and the Sprague-Grundy theorem), and also covered the remaining problems from the contest.
 
 ## Resources
