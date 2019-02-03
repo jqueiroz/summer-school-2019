@@ -1,5 +1,19 @@
 # Brazilian ICPC Summer School &ndash; Days 6 and 7
 
+The 2019 edition of the [Brazilian ICPC Summer School](http://maratona.ic.unicamp.br/MaratonaVerao2019/) took place in Campinas between Jan 21st and Feb 2nd, and I was one of the instructors for the Brazilian Finals class.
+Each day of activities comprised a five-hour contest in the morning and three and a half hours of lectures in the afternoon.
+
+This repository is intended to centralize all resources (slides, problems, solutions, etc.) pertaining to Days 6 and 7, in which my classes took place.
+For the other days, please refer to [Summer School &ndash; Day-by-day](http://maratona.ic.unicamp.br/MaratonaVerao2019/daybyday.html).
+
+Day 6 started with an ICPC-style contest in the morning, which was followed by a lecture in the afternoon.
+The first half of the lecture was reserved for discussion of the contest, while the second half centered around disjoin-set union (including rollback, partial persistence and also the more general "small-to-large" technique).
+
+Day 7 started with a thematic contest in the morning, with problems involving disjoint-set union as well as game theory.
+The first half of the lecture was reserved for discussion of the contest problems involving disjoin-set union, some of which required interesting tricks.
+The second half focused on game theory (including acyclic games, Nim and the Sprague-Grundy theorem), and also covered the remaining problems from the contest.
+
+## Resources
 | Day | Lecture (in Portuguese) | Contest | Scoreboard |
 | --- | ------- | ------- | ---------- |
 | Day 6 &ndash; Jan 28th | [Video](https://www.youtube.com/watch?v=ARgMteH_K7A), [Slides](https://files.johnjq.com/slides/summer/union-find.pdf) | [Contest](http://maratona.ic.unicamp.br/MaratonaVerao2019/contests-b/20190128.pdf) | [Scoreboard](https://vjudge.net/contest/280563#rank) |
