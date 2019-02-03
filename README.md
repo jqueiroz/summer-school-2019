@@ -24,7 +24,7 @@
 | ------- | ----------- |
 | [A &ndash; Learning Languages](https://codeforces.com/contest/277/problem/A) | [Solution](day2/CF-277A.cpp) |
 | [B &ndash; Marbles](https://codeforces.com/gym/101908/problem/B) | [Solution](day2/GYM-101908B.cpp) |
-| [C &ndash; Win or Freeze](https://codeforces.com/contest/150/problem/A) | [Solution 1 (dynamic programming)](day2/CF-150A.cpp), [Solution 2 (faster)](day2/CF-150A-faster.cpp) |
+| [C &ndash; Win or Freeze](https://codeforces.com/contest/150/problem/A) | [Solution 1 (dynamic programming)](day2/CF-150A.cpp), [Solution 2 (ad hoc)](day2/CF-150A-faster.cpp) |
 | [D &ndash; Points](https://codeforces.com/gym/102078/problem/B) | [Solution](day2/seletiva-pontos.cpp) |
 | [E &ndash; Mahmoud and a Dictionary](https://codeforces.com/contest/766/problem/D) | [Solution](day2/CF-766D.cpp) |
 | [F &ndash; Strange Food Chain](https://www.spoj.com/problems/CHAIN/en/) | [Solution](day2/SPOJ-CHAIN.cpp) |
