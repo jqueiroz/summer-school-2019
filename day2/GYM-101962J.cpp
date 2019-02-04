@@ -23,12 +23,16 @@ public:
     void merge(int a, int b) {
         a = find(a);
         b = find(b);
-        if (size(a) > size(b))
+        int sza = size(a);
+        int szb = size(b);
+        if (sza > szb) {
             swap(a, b);
+            swap(sza, szb);
+        }
         if (a != b) {
             m_edges.push_back({a, b});
             m_parent[a] = b;
-            m_size[b] += m_size[a];
+            m_size[b] = sza + szb;
         }
     }
     // Complexity: O(log(n) alpha(n))
@@ -37,7 +41,7 @@ public:
     }
     // Complexity: O(log(n) alpha(n))
     int size(const int a) {
-        auto it = m_size.find(a);
+        auto it = m_size.find(find(a));
         if (it == m_size.end())
             return 1;
         else
