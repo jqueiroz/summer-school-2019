@@ -22,7 +22,7 @@ The second half focused on game theory (including acyclic games, Nim and the Spr
 ## Problems from Day 6 (Jan 28th)
 | Problem | Solution(s) |
 | ------- | ----------- |
-| [A &ndash; Keep Them Separated](https://open.kattis.com/problems/keepthemseparated) | [Solution 1 (safe hash)](day1/keepthemseparated.cpp), [Solution 2 (hackable)](day1/keepthemseparated_unsafer.cpp) |
+| [A &ndash; Keep Them Separated](https://open.kattis.com/problems/keepthemseparated) | [Solution 1 (safe)](day1/keepthemseparated.cpp), [Solution 2 (hackable)](day1/keepthemseparated_unsafer.cpp) |
 | [B &ndash; The Values You Can Make](https://codeforces.com/contest/687/problem/C) | [Solution](day1/CF-687C.cpp) |
 | [C &ndash; Roads](http://www.codah.club/tasks.php?lang=uk&show_task=5000001394) | [Solution](day1/APIO-roads.cpp) |
 | [D &ndash; Journey](https://codeforces.com/contest/839/problem/C) | [Solution](day1/CF-839C.cpp) |
